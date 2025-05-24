@@ -24,6 +24,8 @@ int main(void) {
   }
 
   printf("[+] Daemon started. Press CAPS LOCK to toggle\n");
+  printf("[+] Press CTRL+C to exit\n");
+  printf("[+] Process ID: %d\n", getpid());
 
   while (running) {
     input_poll();
